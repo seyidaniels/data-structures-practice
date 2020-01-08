@@ -16,4 +16,4 @@ def isValidParentheses(string):
     return True if len(stack) == 0 else False
 
 
-print(isValidParentheses("(])"))
+print(isValidParentheses("([()]])"))
