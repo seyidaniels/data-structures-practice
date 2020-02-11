@@ -2,7 +2,7 @@ def twoSum(nums, target):
     answer = []
     for i in range(len(nums)):
         diff = target - nums[i]
-        if diff in nums and (nums.index(diff) - i) != i:
+        if diff in nums and (nums.index(diff)) != i:
             answer.append(i)
             answer.append(nums.index(diff))
             return answer

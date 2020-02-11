@@ -16,6 +16,6 @@ def lengthOfLongestSubstring(strings: str) -> int:
     return maxLength
 
 
-p = lengthOfLongestSubstring("pwwkew")
+p = lengthOfLongestSubstring("au")
 
 print(p)

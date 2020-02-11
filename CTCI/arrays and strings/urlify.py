@@ -1,14 +1,34 @@
-def urlify(string):
+def urlify(string, length):
+
+    #  Count length of spaces needed
+    spaceCount = 0
+    for i in range(length):
+        if (string[i] == ' '):
+            spaceCount += 1
+
+    index = length + spaceCount * 2
+
     newString = ''
-    for s in string:
-        if s == ' ':
-            newString += "%20"
+
+    for i in range(length):
+        if (string[i] == ' '):
+            newString += '%20'
         else:
-            newString += s
+            newString += string[i]
 
     return newString
 
+    # print(string)
 
-p = urlify('Mr John Smith')
+    # for s in string:
+    #     if s == ' ':
+    #         newString += "%20"
+    #     else:
+    #         newString += s
+
+    # return newString
+
+
+p = urlify('Mr John Smith    ', 13)
 
 print(p)
